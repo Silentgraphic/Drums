@@ -1,9 +1,13 @@
 import './App.css';
 import DrumPad from './drumPad';
+import Display from './display';
 
 function App() {
   return (
-    <DrumPad />
+    <div id="drum-machine">
+      <DrumPad />
+      <Display />
+    </div>
   );
 }
 
