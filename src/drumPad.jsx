@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentNote } from "./slices/drum";
 
@@ -22,6 +22,14 @@ function CreateDivs(note, noteSrc) {
 
 function DrumPad() {
     const drumList = useSelector((state) => state.drumList.notesList);
+
+    const handleKeyDown = (event) => {
+        document.getElementById(event.key.toUpperCase()).play();
+    };
+
+    useEffect(() => {
+        document.addEventListener("keydown", (event) => handleKeyDown(event));
+    });
     return (
         <div id="test">
             {Object.entries(drumList).map((note) => CreateDivs(note[0], note[1]))}

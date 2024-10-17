@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     notesList: {
         a: "a.mp3",
-        b: "b.mp3",
         c: "c.mp3",
         d: "d.mp3",
         e: "e.mp3",
