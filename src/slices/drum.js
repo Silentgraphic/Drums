@@ -2,15 +2,15 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     notesList: {
-        a: "a.mp3",
-        c: "c.mp3",
-        d: "d.mp3",
-        e: "e.mp3",
         q: "q.mp3",
-        s: "s.mp3",
         w: "w.mp3",
+        e: "e.mp3",
+        a: "a.mp3",
+        s: "s.mp3",
+        d: "d.mp3",
+        z: "z.mp3",
         x: "x.mp3",
-        z: "z.mp3"
+        c: "c.mp3",
     },
     currentNote: ""
 };

@@ -13,8 +13,8 @@ function CreateDivs(note, noteSrc) {
 
     return (
         <div key={note} id={note + "Elment"} className="drum-pad" onClick={handleClick}>
-            {note}
-            <audio ref={ref} id={note.toUpperCase()} src={noteSrc}></audio>
+            {note.toUpperCase()}
+            <audio className="clip" ref={ref} id={note.toUpperCase()} src={noteSrc}></audio>
         </div>
     );
 
