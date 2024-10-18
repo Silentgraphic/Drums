@@ -1,4 +1,3 @@
-import './App.css';
 import DrumPad from './drumPad';
 import Display from './display';
 

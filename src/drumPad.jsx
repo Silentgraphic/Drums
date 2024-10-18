@@ -13,8 +13,8 @@ function CreateDivs(note, noteSrc) {
 
     return (
         <div key={note} id={note + "Elment"} className="drum-pad" onClick={handleClick}>
-            {note.toUpperCase()}
-            <audio className="clip" ref={ref} id={note.toUpperCase()} src={noteSrc}></audio>
+            {note}
+            <audio className="clip" ref={ref} id={note} src={noteSrc}></audio>
         </div>
     );
 
@@ -31,8 +31,8 @@ function DrumPad() {
         document.addEventListener("keydown", (event) => handleKeyDown(event));
     });
     return (
-        <div id="test">
-            {Object.entries(drumList).map((note) => CreateDivs(note[0], note[1]))}
+        <div id="drum-notes">
+            {Object.entries(drumList).map((note) => CreateDivs(note[0].toUpperCase(), note[1]))}
         </div>
     );
 
