@@ -31,7 +31,7 @@ function DrumPad() {
         document.addEventListener("keydown", (event) => handleKeyDown(event));
     });
     return (
-        <div id="drum-notes">
+        <div id="drumpad">
             {Object.entries(drumList).map((note) => CreateDivs(note[0].toUpperCase(), note[1]))}
         </div>
     );

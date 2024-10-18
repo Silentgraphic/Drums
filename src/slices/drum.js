@@ -12,7 +12,7 @@ const initialState = {
         x: "x.mp3",
         c: "c.mp3",
     },
-    currentNote: ""
+    currentNote: " "
 };
 
 const drumSlice = createSlice({
